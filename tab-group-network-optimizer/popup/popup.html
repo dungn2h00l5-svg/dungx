@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tối ưu mạng cho nhóm tab</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="brand">
+        <img src="../icons/icon32.png" width="20" height="20" alt="" />
+        <h1>Tối ưu mạng cho nhóm tab</h1>
+      </div>
+      <label class="row switch-row">
+        <span>
+          <strong>Tự bật cho mọi nhóm</strong>
+          <small>Tắt đi nếu chỉ muốn chọn từng nhóm.</small>
+        </span>
+        <input type="checkbox" id="applyAll" class="switch" />
+      </label>
+    </header>
+
+    <section>
+      <h2 id="groupsHeading">Nhóm tab</h2>
+      <div id="groups" aria-live="polite"></div>
+    </section>
+
+    <details id="defaultsBox" class="card">
+      <summary>Cài đặt mặc định cho nhóm</summary>
+      <div id="defaults"></div>
+    </details>
+
+    <footer>
+      <p>Số trên biểu tượng = số yêu cầu bị chặn trong tab đang xem. Tab ngoài nhóm không bị ảnh hưởng.</p>
+      <button type="button" id="resetStats" class="link">Đặt lại số liệu</button>
+    </footer>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

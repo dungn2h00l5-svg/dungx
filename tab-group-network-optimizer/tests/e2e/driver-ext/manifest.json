@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "TGNO test driver",
+  "version": "1.0.0",
+  "description": "Test-only helper: drives tabs and groups, reports to the local test server.",
+  "permissions": ["tabs", "tabGroups", "management"],
+  "host_permissions": ["http://127.0.0.1/*"],
+  "background": { "service_worker": "driver.js" }
+}
